@@ -8,6 +8,7 @@
   },
   "typescript.tsdk": ".yarn/sdks/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.preferences.includePackageJsonAutoImports": "on",
   "graphql-config.load.baseDir": "./apps/frontend",
   "graphql-codegen.configFilePath": "./apps/frontend/codegen.ts",
   "graphql-codegen.fileExtensionsDeclaringGraphQLDocuments": [

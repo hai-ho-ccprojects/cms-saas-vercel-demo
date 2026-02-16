@@ -14,13 +14,13 @@
     @apply inline-block relative no-underline whitespace-nowrap;
   }
   .btn-before {
-    @apply before:content-[""] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-azure before:rounded-[40px] before:transition-all before:duration-300 before:ease-in-out;
+    @apply before:content-[""] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-azure before:rounded-[8px] before:transition-all before:duration-300 before:ease-in-out;
   }
   .btn-before--hover {
     @apply hover:before:translate-x-[0px] hover:before:translate-y-[8px];
   }
   .btn__content {
-    @apply font-semibold px-[16px] py-[10px] rounded-[40px] border-vulcan border-2 relative;
+    @apply font-semibold px-[16px] py-[10px] rounded-[8px] border-vulcan border-2 relative;
   }
 
   // Button styles
@@ -28,9 +28,9 @@
   .btn--secondary {
     @apply btn;
   }
-//  .btn--default {
-//    @apply btn-before btn-before--hover active:translate-y-[4px] active:before:translate-y-0 transition-transform duration-300 ease-in-out;
-//  }
+  //  .btn--default {
+  //    @apply btn-before btn-before--hover active:translate-y-[4px] active:before:translate-y-0 transition-transform duration-300 ease-in-out;
+  //  }
   .btn--cta {
     @apply btn-before before:translate-x-[8px] before:translate-y-[8px] hover:before:translate-x-[0px] hover:before:translate-y-[0px];
   }
@@ -40,7 +40,7 @@
 
   // Button content
   .btn--primary .btn__content {
-    @apply  z-10;
+    @apply z-10;
     background-color: var(--btn-primary-bg);
     color: var(--btn-primary-text);
   }
@@ -92,20 +92,18 @@
   }
 
   .apply-text {
-    @apply 
-      text-[var(--text-main)] 
-      dark:text-[var(--text-dark)] 
-      prose-blockquote:text-[var(--text-main)] 
+    @apply text-[var(--text-main)]
+      dark:text-[var(--text-dark)]
+      prose-blockquote:text-[var(--text-main)]
       dark:prose-blockquote:text-[var(--text-dark)]
-      prose-figcaption:text-[var(--text-main)] 
+      prose-figcaption:text-[var(--text-main)]
       dark:prose-figcaption:text-[var(--text-dark)];
   }
 
   .apply-background {
-    @apply 
-      bg-[var(--bg-main)] 
-      dark:bg-[var(--bg-dark)] 
-      dark:border-[var(--border-dark)] 
+    @apply bg-[var(--bg-main)]
+      dark:bg-[var(--bg-dark)]
+      dark:border-[var(--border-dark)];
   }
 
   // Fully styled classes
@@ -120,15 +118,14 @@
     --btn-primary-text: var(--ghost-white);
     --bg-inherit-button: var(--bg-main);
 
-    @apply 
-        bg-[var(--bg-main)] 
-        dark:bg-[var(--bg-dark)] 
-        text-[var(--text-main)] 
-        dark:text-[var(--text-dark)] 
-        dark:border-[var(--border-dark)] 
-        prose-blockquote:text-[var(--text-main)] 
+    @apply bg-[var(--bg-main)]
+        dark:bg-[var(--bg-dark)]
+        text-[var(--text-main)]
+        dark:text-[var(--text-dark)]
+        dark:border-[var(--border-dark)]
+        prose-blockquote:text-[var(--text-main)]
         dark:prose-blockquote:text-[var(--text-dark)]
-        prose-figcaption:text-[var(--text-main)] 
+        prose-figcaption:text-[var(--text-main)]
         dark:prose-figcaption:text-[var(--text-dark)];
   }
   .on-white {
@@ -180,7 +177,7 @@
     --bg-main: var(--tangy);
     --bg-dark: var(--vulcan-85);
     --text-main: var(--vulcan);
-  } 
+  }
   .on-vulcan {
     @apply on-base;
 
@@ -247,10 +244,9 @@
       content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none"><path d="M1 12.3711C1 9.05664 3.67767 6.37109 6.97866 6.37109H7M7 6.36619C3.68555 6.36619 1 3.69075 1 0.392454V0.371094" stroke="%2310141D" stroke-width="1.5"/></svg>') !important;
     }
   }
-  
 }
 
 // Hide the edit-mode content link
 .optly-contentLink {
-  display: none
+  display: none;
 }
